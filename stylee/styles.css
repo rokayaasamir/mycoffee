@@ -1,0 +1,335 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.row {
+  width: 100%;
+  padding: 0px 80px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: brown;
+}
+
+.navbar h1 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.navbar h1:hover {
+  background-color: brown;
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 500px;
+}
+
+
+
+.design {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 600px;
+  position: relative;
+
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+
+}
+
+.design::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.996/60%);
+}
+
+.design .image,
+.design .text {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.design .image {
+  text-align: center;
+}
+
+@media(max-width:767px) {
+  .design.image {
+    display: none;
+  }
+}
+
+.design .image img {
+  position: relative;
+  margin-bottom: 20px;
+
+}
+
+.design .text {
+  color: brown;
+  padding: 50px;
+  background-color: beige;
+}
+
+.design .text h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.design .text h1 {
+  font-size: 35px;
+  margin-bottom: 50px;
+
+}
+
+.design .text p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+
+.services {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  color: brown;
+}
+
+.services-content {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin: 80px;
+
+}
+
+.services-content .card {
+  background-color: white;
+}
+
+.services-content .card img {
+  max-width: 100%;
+}
+
+.services-content .card .info {
+  padding: 20px;
+}
+
+.services-content .card .info h3 {
+  margin: 0;
+}
+
+
+
+
+
+
+.rcontact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  justify-content: center;
+  color: brown;
+}
+
+.rcontact .main-heading h2 {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: initial;
+  font-size: 35px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: brown;
+
+}
+
+.rcontact .main-heading p {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 40px;
+  color: brown;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rcontact .main-heading i {
+  padding-bottom: 40px;
+  color: brown;
+}
+
+.rcontact .main-heading p {
+  padding-top: 5px;
+  padding-bottom: 90px;
+}
+
+.rcontact .contentus {
+  display: flex;
+  justify-content: center;
+}
+
+@media(max-width:767px) {
+  .rcontact .contentus {
+    flex-direction: column;
+  }
+}
+
+.rcontact .contentus form {
+  flex-basis: 70%;
+
+}
+
+.rcontact .contentus form .main-input {
+  padding: 20px;
+  display: block;
+  border: 1px solid brown;
+  margin-bottom: 30px;
+  width: 100%;
+
+}
+
+.rcontact .contentus form .main-input:focus {
+  outline: none;
+}
+
+.rcontact .contentus form textarea.main-input {
+  height: 200px;
+
+}
+
+.rcontact .contentus form input[type="submit"] {
+  background-color: brown;
+  color: white;
+  padding: 20px;
+  border: none;
+  display: flex;
+  margin-left: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.rcontact .contentus .info {
+  flex-basis: 25%;
+}
+
+@media(max-width:767px) {
+  .rcontact .lcontent .info {
+    order: -1;
+
+  }
+
+}
+
+.rcontact .contentus .info h4 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  color: brown;
+}
+
+.rcontact .contentus .info .phone {
+  display: block;
+  color: brown;
+  margin-bottom: 10px;
+}
+
+.rcontact .contentus .info h4:nth-of-type(2) {
+  margin-top: 90px;
+}
+
+@media(max-width:767px) {
+  .contactus .rcontent .info h4:nth-of-type(2) {
+    margin-top: 30px;
+  }
+}
+
+.contactus .rcontent .info address {
+  color: brown;
+  line-height: 2;
+}
+
+@media(max-width:767px) {
+  .contactus .rcontent .info address {
+    margin-bottom: 40px;
+  }
+}
